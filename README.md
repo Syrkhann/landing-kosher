@@ -14,7 +14,7 @@ landing-kosher
 
 ## Live Website
 
-https://YOUR-GITHUB-LOGIN.github.io/landing-kosher/
+https://Syrkhann.github.io/landing-kosher/
 
 ## Project Description
 
