@@ -1,53 +1,66 @@
-# Expense Tracker — Landing Page
+# Lab 3 — ExpenseTracker
 
-## Student
+## Студент
 
-Көшер Сырхан
+**Көшер Сырхан**
 
-## Topic
+## Группа
 
-Personal Expense Tracking
+**IT1-2310**
 
-## Repository
+## Трек
 
-landing-kosher
+**A — Tailwind CSS**
 
-## Live Website
+## Тема
 
-https://Syrkhann.github.io/landing-kosher/
+**Учёт расходов**
 
-## Project Description
+## Репозиторий
 
-This project is a responsive landing page about personal
-expense tracking.
+`landing-kosher`
 
-The website demonstrates the use of HTML5 semantic markup,
-CSS3, forms, accessibility principles, SEO metadata and
-responsive design.
+---
 
-## What I Did
+## О проекте
 
-- Created a semantic HTML5 website
-- Used header, nav, main, section, article and footer
-- Created more than four content sections
-- Added a contact form
-- Added labels and required fields
-- Added alt attributes where images are used
-- Added h1, h2 and h3 headings
-- Added title and meta description
-- Added responsive viewport settings
-- Added favicon
-- Created responsive design for mobile and desktop
-- Tested the layout for 375px and 1280px screens
-- Published the website using GitHub Pages
+ExpenseTracker — это адаптивная landing page для демонстрации интерфейса учёта личных расходов.
 
-## Technologies
+В проекте используются HTML5 и Tailwind CSS через Play CDN.
 
-- HTML5
-- CSS3
-- GitHub
-- GitHub Pages
+Страница содержит:
+- навигационное меню;
+- главный экран;
+- информацию о бюджете;
+- карточки возможностей;
+- список расходов;
+- информацию о проекте.
 
-## Author
+---
 
-Көшер Сырхан
+## Как запустить
+
+1. Скачайте или клонируйте репозиторий.
+2. Откройте файл `index.html` в браузере.
+3. Для загрузки Tailwind CSS через Play CDN требуется подключение к интернету.
+4. Для проверки адаптивности откройте DevTools в браузере.
+5. Проверьте сайт на ширинах **375 px, 768 px и 1280 px**.
+
+---
+
+## Требования Lab 3
+
+### Адаптив
+
+В проекте предусмотрены три основных размера экрана:
+
+- **375 px** — телефон;
+- **768 px** — планшет;
+- **1280 px** — desktop.
+
+На маленьком экране меню располагается вертикально, а на более широком экране переходит в горизонтальное положение.
+
+Для карточек используется адаптивная Grid-сетка:
+
+```html
+grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3
