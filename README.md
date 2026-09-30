@@ -20,6 +20,13 @@
 
 `landing-kosher`
 
+
+## GitHub Pages
+
+Сайт проекта:
+
+https://syrkhann.github.io/landing-kosher/
+
 ---
 
 ## О проекте
