@@ -1,384 +1,274 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Expense Tracker — Учёт расходов</title>
 
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
-
-    <meta name="description"
-          content="Expense Tracker — простой и удобный способ контролировать личные расходы, бюджет и финансовые цели.">
-
-    <title>Expense Tracker — Учёт расходов</title>
-
-    <link rel="icon" href="images/favicon.svg">
-
-    <link rel="stylesheet" href="style.css">
+  <!-- Tailwind CSS Play CDN: для лабораторной работы достаточно -->
+  <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
-
-<header class="header">
-    <div class="container header-content">
-
-        <a href="#home" class="logo">
-            Expense<span>Tracker</span>
-        </a>
-
-        <nav class="nav">
-            <a href="#home">Главная</a>
-            <a href="#about">О проекте</a>
-            <a href="#features">Возможности</a>
-            <a href="#how-it-works">Как работает</a>
-            <a href="#contact">Контакты</a>
-        </nav>
-
-    </div>
-</header>
-
-
-<main>
-
-    <!-- HERO -->
-    <section class="hero" id="home">
-        <div class="container hero-content">
-
-            <div class="hero-text">
-                <p class="subtitle">SMART FINANCE</p>
-
-                <h1>
-                    Контролируй свои расходы.
-                    Управляй своим будущим.
-                </h1>
-
-                <p class="hero-description">
-                    Expense Tracker помогает записывать ежедневные расходы,
-                    распределять их по категориям и лучше понимать,
-                    куда уходят ваши деньги.
-                </p>
-
-                <a href="#contact" class="button">
-                    Начать сейчас
-                </a>
-            </div>
-
-            <div class="hero-card">
-                <div class="balance-title">
-                    Мой бюджет
-                </div>
-
-                <div class="balance">
-                    250 000 ₸
-                </div>
-
-                <div class="expense-row">
-                    <span>Еда</span>
-                    <strong>-45 000 ₸</strong>
-                </div>
-
-                <div class="expense-row">
-                    <span>Транспорт</span>
-                    <strong>-18 000 ₸</strong>
-                </div>
-
-                <div class="expense-row">
-                    <span>Развлечения</span>
-                    <strong>-22 000 ₸</strong>
-                </div>
-
-                <div class="expense-row">
-                    <span>Другое</span>
-                    <strong>-15 000 ₸</strong>
-                </div>
-            </div>
-
-        </div>
-    </section>
-
-
-    <!-- ABOUT -->
-    <section class="about section" id="about">
-        <div class="container">
-
-            <div class="section-heading">
-                <p class="subtitle">О ПРОЕКТЕ</p>
-
-                <h2>
-                    Простое управление личными финансами
-                </h2>
-
-                <p>
-                    Учёт расходов позволяет видеть реальную картину
-                    своих финансов и принимать более осознанные решения.
-                </p>
-            </div>
-
-            <div class="about-grid">
-
-                <article class="about-card">
-                    <div class="icon">01</div>
-
-                    <h3>Контроль</h3>
-
-                    <p>
-                        Записывайте свои расходы и контролируйте,
-                        сколько денег вы тратите каждый день.
-                    </p>
-                </article>
-
-
-                <article class="about-card">
-                    <div class="icon">02</div>
-
-                    <h3>Планирование</h3>
-
-                    <p>
-                        Устанавливайте бюджет и планируйте расходы
-                        на необходимые покупки.
-                    </p>
-                </article>
-
-
-                <article class="about-card">
-                    <div class="icon">03</div>
-
-                    <h3>Экономия</h3>
-
-                    <p>
-                        Находите категории, где можно сократить расходы,
-                        и постепенно увеличивайте свои накопления.
-                    </p>
-                </article>
-
-            </div>
-
-        </div>
-    </section>
-
-
-    <!-- FEATURES -->
-    <section class="features section" id="features">
-        <div class="container">
-
-            <div class="section-heading">
-                <p class="subtitle">ВОЗМОЖНОСТИ</p>
-
-                <h2>
-                    Всё необходимое для контроля бюджета
-                </h2>
-            </div>
-
-
-            <div class="features-grid">
-
-                <article class="feature-card">
-                    <div class="feature-number">01</div>
-
-                    <h3>Добавление расходов</h3>
-
-                    <p>
-                        Быстро записывайте покупки и другие ежедневные
-                        расходы, чтобы ничего не забыть.
-                    </p>
-                </article>
-
-
-                <article class="feature-card">
-                    <div class="feature-number">02</div>
-
-                    <h3>Категории</h3>
-
-                    <p>
-                        Разделяйте расходы на еду, транспорт,
-                        развлечения, образование и другие категории.
-                    </p>
-                </article>
-
-
-                <article class="feature-card">
-                    <div class="feature-number">03</div>
-
-                    <h3>Анализ бюджета</h3>
-
-                    <p>
-                        Анализируйте свои расходы и определяйте,
-                        на что уходит большая часть бюджета.
-                    </p>
-                </article>
-
-
-                <article class="feature-card">
-                    <div class="feature-number">04</div>
-
-                    <h3>Финансовые цели</h3>
-
-                    <p>
-                        Определяйте финансовые цели и контролируйте
-                        прогресс своих накоплений.
-                    </p>
-                </article>
-
-            </div>
-
-        </div>
-    </section>
-
-
-    <!-- HOW IT WORKS -->
-    <section class="how-it-works section" id="how-it-works">
-        <div class="container">
-
-            <div class="section-heading">
-                <p class="subtitle">КАК ЭТО РАБОТАЕТ</p>
-
-                <h2>
-                    Три простых шага
-                </h2>
-            </div>
-
-
-            <div class="steps">
-
-                <article class="step">
-                    <div class="step-number">1</div>
-
-                    <div>
-                        <h3>Запиши расход</h3>
-
-                        <p>
-                            Добавь информацию о покупке
-                            или ежедневной трате.
-                        </p>
-                    </div>
-                </article>
-
-
-                <article class="step">
-                    <div class="step-number">2</div>
-
-                    <div>
-                        <h3>Выбери категорию</h3>
-
-                        <p>
-                            Определи категорию, к которой
-                            относится твой расход.
-                        </p>
-                    </div>
-                </article>
-
-
-                <article class="step">
-                    <div class="step-number">3</div>
-
-                    <div>
-                        <h3>Анализируй результат</h3>
-
-                        <p>
-                            Смотри общую сумму расходов
-                            и планируй дальнейший бюджет.
-                        </p>
-                    </div>
-                </article>
-
-            </div>
-
-        </div>
-    </section>
-
-
-    <!-- CONTACT -->
-    <section class="contact section" id="contact">
-        <div class="container contact-grid">
-
-            <div class="contact-info">
-
-                <p class="subtitle">КОНТАКТЫ</p>
-
-                <h2>
-                    Есть вопросы?
-                    Напишите нам.
-                </h2>
-
-                <p>
-                    Если у вас есть предложения или вопросы
-                    по проекту, заполните форму обратной связи.
-                </p>
-
-            </div>
-
-
-            <form class="contact-form">
-
-                <div class="form-group">
-                    <label for="name">Имя</label>
-
-                    <input
-                        type="text"
-                        id="name"
-                        name="name"
-                        placeholder="Введите ваше имя"
-                        required
-                    >
-                </div>
-
-
-                <div class="form-group">
-                    <label for="email">Email</label>
-
-                    <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        placeholder="example@email.com"
-                        required
-                    >
-                </div>
-
-
-                <div class="form-group">
-                    <label for="message">Сообщение</label>
-
-                    <textarea
-                        id="message"
-                        name="message"
-                        rows="6"
-                        placeholder="Введите ваше сообщение"
-                        required
-                    ></textarea>
-                </div>
-
-
-                <button type="submit" class="button">
-                    Отправить сообщение
-                </button>
-
-            </form>
-
-        </div>
-    </section>
-
-</main>
-
-
-<footer class="footer">
-    <div class="container footer-content">
-
+<body class="min-h-screen bg-slate-100 text-slate-800">
+  <!-- Header / Navigation -->
+  <header class="bg-slate-900 text-white shadow-lg">
+    <nav class="mx-auto flex max-w-6xl flex-col gap-4 px-4 py-5 sm:flex-row sm:items-center sm:justify-between">
+      <a href="#home" class="text-2xl font-bold">Expense<span class="text-cyan-400">Tracker</span></a>
+
+      <div class="flex flex-col gap-2 sm:flex-row sm:items-center sm:gap-6">
+        <a href="#home" class="rounded px-3 py-2 hover:bg-slate-800">Главная</a>
+        <a href="#features" class="rounded px-3 py-2 hover:bg-slate-800">Возможности</a>
+        <a href="#expenses" class="rounded px-3 py-2 hover:bg-slate-800">Расходы</a>
+        <a href="#about" class="rounded px-3 py-2 hover:bg-slate-800">О проекте</a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="home">
+    <!-- Hero -->
+    <section class="bg-white">
+      <div class="mx-auto grid max-w-6xl gap-10 px-4 py-16 md:grid-cols-2 md:items-center md:py-24">
         <div>
-            <a href="#home" class="logo">
-                Expense<span>Tracker</span>
-            </a>
+          <span class="inline-block rounded-full bg-cyan-100 px-4 py-2 text-sm font-semibold text-cyan-700">
+            Простое управление финансами
+          </span>
 
-            <p>
-                Простой подход к управлению личными финансами.
-            </p>
+          <h1 class="mt-5 text-4xl font-extrabold leading-tight sm:text-5xl lg:text-6xl">
+            Контролируй свои
+            <span class="text-cyan-600">расходы</span>
+          </h1>
+
+          <p class="mt-5 max-w-xl text-lg leading-8 text-slate-600">
+            ExpenseTracker помогает видеть ежедневные расходы, распределять бюджет
+            по категориям и понимать, куда уходят деньги.
+          </p>
+
+          <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+            <a href="#expenses"
+               class="rounded-xl bg-cyan-600 px-6 py-3 text-center font-semibold text-white shadow-md hover:bg-cyan-700">
+              Посмотреть расходы
+            </a>
+            <a href="#features"
+               class="rounded-xl border border-slate-300 bg-white px-6 py-3 text-center font-semibold text-slate-700 hover:bg-slate-50">
+              Возможности
+            </a>
+          </div>
         </div>
 
-        <p>
-            © 2026 Expense Tracker. Көшер Сырхан.
-        </p>
+        <div class="rounded-3xl bg-slate-900 p-6 shadow-2xl sm:p-8">
+          <div class="flex items-center justify-between">
+            <div>
+              <p class="text-sm text-slate-400">Баланс за месяц</p>
+              <p class="mt-2 text-3xl font-bold text-white">₸ 185 400</p>
+            </div>
+            <div class="rounded-2xl bg-cyan-500/20 px-4 py-3 text-cyan-300">
+              +12.5%
+            </div>
+          </div>
 
-    </div>
-</footer>
+          <div class="mt-8 grid grid-cols-2 gap-4">
+            <div class="rounded-2xl bg-slate-800 p-4">
+              <p class="text-sm text-slate-400">Доходы</p>
+              <p class="mt-2 text-xl font-bold text-emerald-400">₸ 320 000</p>
+            </div>
+            <div class="rounded-2xl bg-slate-800 p-4">
+              <p class="text-sm text-slate-400">Расходы</p>
+              <p class="mt-2 text-xl font-bold text-rose-400">₸ 134 600</p>
+            </div>
+          </div>
 
+          <div class="mt-6 h-4 overflow-hidden rounded-full bg-slate-700">
+            <div class="h-full w-2/5 rounded-full bg-cyan-500"></div>
+          </div>
+          <p class="mt-3 text-sm text-slate-400">Использовано 42% бюджета</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="bg-slate-100">
+      <div class="mx-auto max-w-6xl px-4 py-16">
+        <div class="mx-auto max-w-2xl text-center">
+          <p class="font-semibold text-cyan-600">Возможности</p>
+          <h2 class="mt-2 text-3xl font-bold sm:text-4xl">Всё важное в одном месте</h2>
+          <p class="mt-4 text-slate-600">
+            Основные функции помогают быстро анализировать личные финансы.
+          </p>
+        </div>
+
+        <div class="mt-10 grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <article class="rounded-2xl bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+            <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-cyan-100 text-2xl">💳</div>
+            <h3 class="mt-5 text-xl font-bold">Учёт расходов</h3>
+            <p class="mt-3 leading-7 text-slate-600">
+              Добавляй расходы и распределяй их по категориям: еда, транспорт, покупки и другое.
+            </p>
+          </article>
+
+          <article class="rounded-2xl bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+            <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-emerald-100 text-2xl">📊</div>
+            <h3 class="mt-5 text-xl font-bold">Аналитика</h3>
+            <p class="mt-3 leading-7 text-slate-600">
+              Сравнивай категории расходов и контролируй, какая часть бюджета уже использована.
+            </p>
+          </article>
+
+          <article class="rounded-2xl bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+            <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-amber-100 text-2xl">🎯</div>
+            <h3 class="mt-5 text-xl font-bold">Бюджет</h3>
+            <p class="mt-3 leading-7 text-slate-600">
+              Устанавливай месячный лимит и следи за оставшейся суммой.
+            </p>
+          </article>
+
+          <article class="rounded-2xl bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+            <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-violet-100 text-2xl">📅</div>
+            <h3 class="mt-5 text-xl font-bold">История</h3>
+            <p class="mt-3 leading-7 text-slate-600">
+              Просматривай операции по датам и быстрее находи нужные записи.
+            </p>
+          </article>
+
+          <article class="rounded-2xl bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+            <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-rose-100 text-2xl">🔔</div>
+            <h3 class="mt-5 text-xl font-bold">Контроль лимита</h3>
+            <p class="mt-3 leading-7 text-slate-600">
+              Визуально отслеживай использование бюджета и избегай лишних расходов.
+            </p>
+          </article>
+
+          <article class="rounded-2xl bg-white p-6 shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+            <div class="flex h-12 w-12 items-center justify-center rounded-xl bg-blue-100 text-2xl">📱</div>
+            <h3 class="mt-5 text-xl font-bold">Адаптивность</h3>
+            <p class="mt-3 leading-7 text-slate-600">
+              Страница корректно выглядит на телефоне, планшете и компьютере.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Expenses -->
+    <section id="expenses" class="bg-white">
+      <div class="mx-auto max-w-6xl px-4 py-16">
+        <div class="flex flex-col gap-4 sm:flex-row sm:items-end sm:justify-between">
+          <div>
+            <p class="font-semibold text-cyan-600">Последние операции</p>
+            <h2 class="mt-2 text-3xl font-bold">Расходы за сентябрь</h2>
+          </div>
+          <span class="w-fit rounded-full bg-slate-100 px-4 py-2 text-sm font-medium">
+            6 операций
+          </span>
+        </div>
+
+        <div class="mt-8 grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-3">
+          <article class="rounded-2xl border border-slate-200 p-5 shadow-sm">
+            <div class="flex items-start justify-between gap-4">
+              <div>
+                <p class="font-bold">Продукты</p>
+                <p class="mt-1 text-sm text-slate-500">30 сентября</p>
+              </div>
+              <span class="font-bold text-rose-500">− ₸ 18 500</span>
+            </div>
+            <p class="mt-4 text-sm text-slate-600">Супермаркет и продукты на неделю.</p>
+          </article>
+
+          <article class="rounded-2xl border border-slate-200 p-5 shadow-sm">
+            <div class="flex items-start justify-between gap-4">
+              <div>
+                <p class="font-bold">Транспорт</p>
+                <p class="mt-1 text-sm text-slate-500">29 сентября</p>
+              </div>
+              <span class="font-bold text-rose-500">− ₸ 6 000</span>
+            </div>
+            <p class="mt-4 text-sm text-slate-600">Такси и общественный транспорт.</p>
+          </article>
+
+          <article class="rounded-2xl border border-slate-200 p-5 shadow-sm">
+            <div class="flex items-start justify-between gap-4">
+              <div>
+                <p class="font-bold">Кафе</p>
+                <p class="mt-1 text-sm text-slate-500">28 сентября</p>
+              </div>
+              <span class="font-bold text-rose-500">− ₸ 4 500</span>
+            </div>
+            <p class="mt-4 text-sm text-slate-600">Обед с друзьями.</p>
+          </article>
+
+          <article class="rounded-2xl border border-slate-200 p-5 shadow-sm">
+            <div class="flex items-start justify-between gap-4">
+              <div>
+                <p class="font-bold">Учёба</p>
+                <p class="mt-1 text-sm text-slate-500">26 сентября</p>
+              </div>
+              <span class="font-bold text-rose-500">− ₸ 12 000</span>
+            </div>
+            <p class="mt-4 text-sm text-slate-600">Учебные материалы и печать.</p>
+          </article>
+
+          <article class="rounded-2xl border border-slate-200 p-5 shadow-sm">
+            <div class="flex items-start justify-between gap-4">
+              <div>
+                <p class="font-bold">Развлечения</p>
+                <p class="mt-1 text-sm text-slate-500">24 сентября</p>
+              </div>
+              <span class="font-bold text-rose-500">− ₸ 8 500</span>
+            </div>
+            <p class="mt-4 text-sm text-slate-600">Кино и свободное время.</p>
+          </article>
+
+          <article class="rounded-2xl border border-slate-200 p-5 shadow-sm">
+            <div class="flex items-start justify-between gap-4">
+              <div>
+                <p class="font-bold">Связь</p>
+                <p class="mt-1 text-sm text-slate-500">22 сентября</p>
+              </div>
+              <span class="font-bold text-rose-500">− ₸ 3 500</span>
+            </div>
+            <p class="mt-4 text-sm text-slate-600">Мобильная связь и интернет.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="bg-slate-900 text-white">
+      <div class="mx-auto max-w-6xl px-4 py-16">
+        <div class="grid gap-10 md:grid-cols-2 md:items-center">
+          <div>
+            <p class="font-semibold text-cyan-400">О проекте</p>
+            <h2 class="mt-2 text-3xl font-bold sm:text-4xl">Почему выбран Tailwind CSS?</h2>
+            <p class="mt-5 leading-8 text-slate-300">
+              Tailwind CSS позволяет быстро создавать интерфейс с помощью готовых utility-классов.
+              Для адаптивности используются префиксы sm:, md: и lg:, поэтому один HTML-файл
+              может подстраиваться под разные размеры экрана. Для этой лабораторной работы
+              структура страницы полностью построена utility-классами Tailwind без собственного
+              CSS-файла. Это удобно для быстрого прототипирования и небольших интерфейсов.
+              Недостаток заключается в том, что HTML может становиться длинным из-за большого
+              количества классов. В отличие от Bootstrap, Tailwind не требует использовать
+              готовые компоненты и даёт более свободно собирать собственный дизайн.
+            </p>
+          </div>
+
+          <div class="rounded-3xl bg-slate-800 p-7">
+            <h3 class="text-xl font-bold">Технологии</h3>
+            <ul class="mt-5 space-y-3 text-slate-300">
+              <li>✓ HTML5</li>
+              <li>✓ Tailwind CSS Play CDN</li>
+              <li>✓ Flexbox</li>
+              <li>✓ CSS Grid через Tailwind utility-классы</li>
+              <li>✓ Responsive prefixes: sm:, md:, lg:</li>
+              <li>✓ GitHub Pages</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-slate-950 px-4 py-6 text-center text-sm text-slate-400">
+    <p>ExpenseTracker — Lab 3 CSS3</p>
+    <p class="mt-1">Көшер Сырхан • IT1-2310</p>
+  </footer>
 </body>
 </html>
